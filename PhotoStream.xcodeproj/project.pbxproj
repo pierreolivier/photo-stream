@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEDC80862CAC24ED001BD818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80852CAC24ED001BD818 /* AppDelegate.swift */; };
+		CEDC80882CAC24ED001BD818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80872CAC24ED001BD818 /* SceneDelegate.swift */; };
+		CEDC808A2CAC24ED001BD818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80892CAC24ED001BD818 /* ViewController.swift */; };
+		CEDC808D2CAC24ED001BD818 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEDC808C2CAC24ED001BD818 /* Base */; };
+		CEDC808F2CAC24EF001BD818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC808E2CAC24EF001BD818 /* Assets.xcassets */; };
+		CEDC80922CAC24EF001BD818 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CEDC80912CAC24EF001BD818 /* Base */; };
+		CEDC809D2CAC24EF001BD818 /* PhotoStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC809C2CAC24EF001BD818 /* PhotoStreamTests.swift */; };
+		CEDC80A72CAC24EF001BD818 /* PhotoStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80A62CAC24EF001BD818 /* PhotoStreamUITests.swift */; };
+		CEDC80A92CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80A82CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDC80992CAC24EF001BD818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDC807A2CAC24ED001BD818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDC80812CAC24ED001BD818;
+			remoteInfo = PhotoStream;
+		};
+		CEDC80A32CAC24EF001BD818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDC807A2CAC24ED001BD818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDC80812CAC24ED001BD818;
+			remoteInfo = PhotoStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEDC80822CAC24ED001BD818 /* PhotoStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC80852CAC24ED001BD818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEDC80872CAC24ED001BD818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEDC80892CAC24ED001BD818 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEDC808C2CAC24ED001BD818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDC808E2CAC24EF001BD818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDC80912CAC24EF001BD818 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEDC80932CAC24EF001BD818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDC80982CAC24EF001BD818 /* PhotoStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC809C2CAC24EF001BD818 /* PhotoStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamTests.swift; sourceTree = "<group>"; };
+		CEDC80A22CAC24EF001BD818 /* PhotoStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC80A62CAC24EF001BD818 /* PhotoStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamUITests.swift; sourceTree = "<group>"; };
+		CEDC80A82CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDC807F2CAC24ED001BD818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC80952CAC24EF001BD818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC809F2CAC24EF001BD818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEDC80792CAC24ED001BD818 = {
+			isa = PBXGroup;
+			children = (
+				CEDC80842CAC24ED001BD818 /* PhotoStream */,
+				CEDC809B2CAC24EF001BD818 /* PhotoStreamTests */,
+				CEDC80A52CAC24EF001BD818 /* PhotoStreamUITests */,
+				CEDC80832CAC24ED001BD818 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDC80832CAC24ED001BD818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC80822CAC24ED001BD818 /* PhotoStream.app */,
+				CEDC80982CAC24EF001BD818 /* PhotoStreamTests.xctest */,
+				CEDC80A22CAC24EF001BD818 /* PhotoStreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDC80842CAC24ED001BD818 /* PhotoStream */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC80852CAC24ED001BD818 /* AppDelegate.swift */,
+				CEDC80872CAC24ED001BD818 /* SceneDelegate.swift */,
+				CEDC80892CAC24ED001BD818 /* ViewController.swift */,
+				CEDC808B2CAC24ED001BD818 /* Main.storyboard */,
+				CEDC808E2CAC24EF001BD818 /* Assets.xcassets */,
+				CEDC80902CAC24EF001BD818 /* LaunchScreen.storyboard */,
+				CEDC80932CAC24EF001BD818 /* Info.plist */,
+			);
+			path = PhotoStream;
+			sourceTree = "<group>";
+		};
+		CEDC809B2CAC24EF001BD818 /* PhotoStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC809C2CAC24EF001BD818 /* PhotoStreamTests.swift */,
+			);
+			path = PhotoStreamTests;
+			sourceTree = "<group>";
+		};
+		CEDC80A52CAC24EF001BD818 /* PhotoStreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC80A62CAC24EF001BD818 /* PhotoStreamUITests.swift */,
+				CEDC80A82CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift */,
+			);
+			path = PhotoStreamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDC80812CAC24ED001BD818 /* PhotoStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC80AC2CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStream" */;
+			buildPhases = (
+				CEDC807E2CAC24ED001BD818 /* Sources */,
+				CEDC807F2CAC24ED001BD818 /* Frameworks */,
+				CEDC80802CAC24ED001BD818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoStream;
+			productName = PhotoStream;
+			productReference = CEDC80822CAC24ED001BD818 /* PhotoStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDC80972CAC24EF001BD818 /* PhotoStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC80AF2CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStreamTests" */;
+			buildPhases = (
+				CEDC80942CAC24EF001BD818 /* Sources */,
+				CEDC80952CAC24EF001BD818 /* Frameworks */,
+				CEDC80962CAC24EF001BD818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDC809A2CAC24EF001BD818 /* PBXTargetDependency */,
+			);
+			name = PhotoStreamTests;
+			productName = PhotoStreamTests;
+			productReference = CEDC80982CAC24EF001BD818 /* PhotoStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEDC80A12CAC24EF001BD818 /* PhotoStreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC80B22CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStreamUITests" */;
+			buildPhases = (
+				CEDC809E2CAC24EF001BD818 /* Sources */,
+				CEDC809F2CAC24EF001BD818 /* Frameworks */,
+				CEDC80A02CAC24EF001BD818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDC80A42CAC24EF001BD818 /* PBXTargetDependency */,
+			);
+			name = PhotoStreamUITests;
+			productName = PhotoStreamUITests;
+			productReference = CEDC80A22CAC24EF001BD818 /* PhotoStreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDC807A2CAC24ED001BD818 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CEDC80812CAC24ED001BD818 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CEDC80972CAC24EF001BD818 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEDC80812CAC24ED001BD818;
+					};
+					CEDC80A12CAC24EF001BD818 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CEDC80812CAC24ED001BD818;
+					};
+				};
+			};
+			buildConfigurationList = CEDC807D2CAC24ED001BD818 /* Build configuration list for PBXProject "PhotoStream" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDC80792CAC24ED001BD818;
+			productRefGroup = CEDC80832CAC24ED001BD818 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDC80812CAC24ED001BD818 /* PhotoStream */,
+				CEDC80972CAC24EF001BD818 /* PhotoStreamTests */,
+				CEDC80A12CAC24EF001BD818 /* PhotoStreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDC80802CAC24ED001BD818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC808F2CAC24EF001BD818 /* Assets.xcassets in Resources */,
+				CEDC80922CAC24EF001BD818 /* Base in Resources */,
+				CEDC808D2CAC24ED001BD818 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC80962CAC24EF001BD818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC80A02CAC24EF001BD818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDC807E2CAC24ED001BD818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC808A2CAC24ED001BD818 /* ViewController.swift in Sources */,
+				CEDC80862CAC24ED001BD818 /* AppDelegate.swift in Sources */,
+				CEDC80882CAC24ED001BD818 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC80942CAC24EF001BD818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC809D2CAC24EF001BD818 /* PhotoStreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC809E2CAC24EF001BD818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC80A72CAC24EF001BD818 /* PhotoStreamUITests.swift in Sources */,
+				CEDC80A92CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDC809A2CAC24EF001BD818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDC80812CAC24ED001BD818 /* PhotoStream */;
+			targetProxy = CEDC80992CAC24EF001BD818 /* PBXContainerItemProxy */;
+		};
+		CEDC80A42CAC24EF001BD818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDC80812CAC24ED001BD818 /* PhotoStream */;
+			targetProxy = CEDC80A32CAC24EF001BD818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEDC808B2CAC24ED001BD818 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDC808C2CAC24ED001BD818 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEDC80902CAC24EF001BD818 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDC80912CAC24EF001BD818 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDC80AA2CAC24EF001BD818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEDC80AB2CAC24EF001BD818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDC80AD2CAC24EF001BD818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoStream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDC80AE2CAC24EF001BD818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoStream/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEDC80B02CAC24EF001BD818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoStream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoStream";
+			};
+			name = Debug;
+		};
+		CEDC80B12CAC24EF001BD818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoStream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoStream";
+			};
+			name = Release;
+		};
+		CEDC80B32CAC24EF001BD818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoStream;
+			};
+			name = Debug;
+		};
+		CEDC80B42CAC24EF001BD818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoStream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDC807D2CAC24ED001BD818 /* Build configuration list for PBXProject "PhotoStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC80AA2CAC24EF001BD818 /* Debug */,
+				CEDC80AB2CAC24EF001BD818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC80AC2CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC80AD2CAC24EF001BD818 /* Debug */,
+				CEDC80AE2CAC24EF001BD818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC80AF2CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC80B02CAC24EF001BD818 /* Debug */,
+				CEDC80B12CAC24EF001BD818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC80B22CAC24EF001BD818 /* Build configuration list for PBXNativeTarget "PhotoStreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC80B32CAC24EF001BD818 /* Debug */,
+				CEDC80B42CAC24EF001BD818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEDC807A2CAC24ED001BD818 /* Project object */;
+}
