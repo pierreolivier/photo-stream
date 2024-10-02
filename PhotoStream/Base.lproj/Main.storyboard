@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="1127" y="-372"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="zQC-0b-OvC">
             <objects>
-                <viewController id="Bo9-kf-gyU" sceneMemberID="viewController">
+                <viewController id="Bo9-kf-gyU" customClass="DetailsViewController" customModule="PhotoStream" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ot6-Gn-tr0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,6 +141,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="closeDetails:" destination="Bo9-kf-gyU" eventType="primaryActionTriggered" id="zwp-2o-1gf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FXO-zm-P4p"/>

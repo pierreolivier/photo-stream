@@ -11,6 +11,7 @@
 		CE2999302CADE7FB0087FB36 /* PhotoCollectionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29992F2CADE7FB0087FB36 /* PhotoCollectionDataModel.swift */; };
 		CE2999322CADE80B0087FB36 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2999312CADE80B0087FB36 /* PhotoCollectionViewController.swift */; };
 		CE2999342CADEAD30087FB36 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2999332CADEAD30087FB36 /* Photo.swift */; };
+		CE2999372CADF5C40087FB36 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2999362CADF5C40087FB36 /* DetailsViewController.swift */; };
 		CEDC80862CAC24ED001BD818 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80852CAC24ED001BD818 /* AppDelegate.swift */; };
 		CEDC80882CAC24ED001BD818 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80872CAC24ED001BD818 /* SceneDelegate.swift */; };
 		CEDC808A2CAC24ED001BD818 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80892CAC24ED001BD818 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		CE29992F2CADE7FB0087FB36 /* PhotoCollectionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionDataModel.swift; sourceTree = "<group>"; };
 		CE2999312CADE80B0087FB36 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		CE2999332CADEAD30087FB36 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CE2999362CADF5C40087FB36 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CEDC80822CAC24ED001BD818 /* PhotoStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC80852CAC24ED001BD818 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDC80872CAC24ED001BD818 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDC80892CAC24ED001BD818 /* ViewController.swift */,
+				CE2999362CADF5C40087FB36 /* DetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				CEDC80882CAC24ED001BD818 /* SceneDelegate.swift in Sources */,
 				CE2999302CADE7FB0087FB36 /* PhotoCollectionDataModel.swift in Sources */,
 				CE29992E2CADE7EB0087FB36 /* PhotoCollectionViewModel.swift in Sources */,
+				CE2999372CADF5C40087FB36 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
