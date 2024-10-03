@@ -11,5 +11,5 @@ import UIKit
 struct Photo {
     let id: Int
     let date: Date
-    let photo: UIImage?
+    let image: UIImage?
 }
