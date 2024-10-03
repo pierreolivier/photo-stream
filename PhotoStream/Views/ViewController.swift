@@ -27,6 +27,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     private func setupCollectionView() {
+        collectionView.alwaysBounceVertical = true
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -59,8 +60,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         })
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? PhotoCollectionViewCell,
+            let details = segue.destination as? DetailsViewController {
+            details.photo = cell.photo
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("\(collectionViewModel.photos.count)")
         return collectionViewModel.photos.count
     }
     
@@ -68,8 +75,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PhotoCollectionViewCell
         let item = collectionViewModel.photos[indexPath.item]
         
-        if let photo = item.photo {
-            cell.photo.image = photo
+        cell.photo = item
+        
+        if let photo = item.image {
+            cell.image.image = photo
         }
         
         
@@ -77,7 +86,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 100)
+        let width = collectionView.frame.width - 2
+        return CGSize(width: width / 2, height: width / 2)
     }
     
 }
