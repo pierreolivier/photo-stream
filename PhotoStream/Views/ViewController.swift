@@ -27,9 +27,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     private func setupCollectionView() {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 100, height: 100)
-        collectionView.collectionViewLayout = layout
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -68,8 +65,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PhotoCollectionViewCell
         let item = collectionViewModel.photos[indexPath.item]
+        
+        if let photo = item.photo {
+            cell.photo.image = photo
+        }
+        
         
         return cell
     }
