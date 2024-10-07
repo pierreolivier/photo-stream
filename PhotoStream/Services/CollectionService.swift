@@ -38,7 +38,7 @@ class CollectionService {
     }
     
     func listenToCollection(completionHandler: @escaping ([Photo]) -> Void) {
-        print("Listenning to collection updates...")
+        print("Listening to collection updates...")
         
         self.collectionListener = completionHandler
     }

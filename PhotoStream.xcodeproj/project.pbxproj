@@ -23,6 +23,8 @@
 		CEE6EAD92CAEFB1C00C161DF /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EAD82CAEFB1C00C161DF /* PhotoCollectionViewCell.swift */; };
 		CEE6EADD2CB3D14500C161DF /* CollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EADC2CB3D14500C161DF /* CollectionService.swift */; };
 		CEE6EAE02CB3D6D300C161DF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEE6EADF2CB3D6D300C161DF /* Alamofire */; };
+		CEF2AD5C2CB42914008ADC7A /* CollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EADC2CB3D14500C161DF /* CollectionService.swift */; };
+		CEF2AD5D2CB429A3008ADC7A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2999332CADEAD30087FB36 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,7 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF2AD5D2CB429A3008ADC7A /* Photo.swift in Sources */,
 				CEDC809D2CAC24EF001BD818 /* PhotoStreamTests.swift in Sources */,
+				CEF2AD5C2CB42914008ADC7A /* CollectionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +578,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -593,6 +598,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -611,6 +617,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamUITests;
@@ -628,6 +635,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.pierreolivier.photostream.PhotoStreamUITests;
