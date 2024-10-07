@@ -12,12 +12,14 @@ class PhotoCollectionViewModel {
     @Published var photos: [Photo] = []
     
     init() {
+        // Listen to collection update received by the service
         CollectionService.shared.listenToCollection() { photos in
             self.photos = photos.sorted(by: { first, second in
                 first.date > second.date
             })
         }
         
+        // Init first data
         loadData()
     }
     

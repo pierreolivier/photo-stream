@@ -62,17 +62,15 @@ class CaptureViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     @IBAction func takePicture(_ sender: Any) {
-        photoSettings = AVCapturePhotoSettings()
         if (photoOutput != nil) {
             // Physical device
+            photoSettings = AVCapturePhotoSettings()
             photoOutput.capturePhoto(with: photoSettings, delegate: self)
         } else {
             // Simulator
             // Mock result with an internal photo
             savePicture(image: UIImage(named: "Photo2")!)
         }
-        
-        self.navigationController?.popViewController(animated: true)
     }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
@@ -90,6 +88,8 @@ class CaptureViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     func savePicture(image: UIImage) {
         CollectionService.shared.generateAuthor() { response in
             CollectionService.shared.savePhoto(image: image, author: response.author)
+            
+            self.navigationController?.popViewController(animated: true)
         }
     }
 }

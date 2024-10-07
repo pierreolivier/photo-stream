@@ -46,21 +46,18 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         UIView.animate(withDuration: 0.4, delay: 0, options: .transitionCrossDissolve, animations: {
             self.introductionView.alpha = 0
-            
-            // Apply layout updates
             self.view.layoutIfNeeded()
         })
         
         UIView.animate(withDuration: 0.4, delay: 0.1, options: .transitionCrossDissolve, animations: {
             self.collectionView.frame.origin.y = self.introductionView.frame.origin.y
             self.collectionView.frame.size.height += self.introductionView.frame.height
-            
-            // Apply layout updates
             self.view.layoutIfNeeded()
         })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Pass photo item to DetailsViewController when creating it
         if let cell = sender as? PhotoCollectionViewCell,
             let details = segue.destination as? DetailsViewController {
             details.photo = cell.photo
@@ -75,12 +72,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PhotoCollectionViewCell
         let item = collectionViewModel.photos[indexPath.item]
         
+        // Pass Photo to the current cell
         cell.photo = item
         
-        if let photo = item.image {
-            cell.image.image = photo
+        // Set UIImage
+        if let image = item.image {
+            cell.image.image = image
         }
-        
         
         return cell
     }
@@ -89,6 +87,5 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let width = collectionView.frame.width - 2
         return CGSize(width: width / 2, height: width / 2)
     }
-    
 }
 

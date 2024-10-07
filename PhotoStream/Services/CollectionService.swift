@@ -16,15 +16,14 @@ struct PhotoResponse: Codable {
 class CollectionService {
     static let shared = CollectionService()
     
+    // API base url
     let url = "https://dummyjson.com/quotes"
+    
+    // Data
     var photos: [Photo] = []
     
+    // Data listener
     var collectionListener: (([Photo]) -> Void)!
-    
-    func listenToCollection(completionHandler: @escaping ([Photo]) -> Void) {
-        print("Listenning to collection updates...")
-        self.collectionListener = completionHandler
-    }
     
     func generateCollection() {
         print("Generating collection...")
@@ -36,6 +35,12 @@ class CollectionService {
         }
         
         collectionListener?(self.photos)
+    }
+    
+    func listenToCollection(completionHandler: @escaping ([Photo]) -> Void) {
+        print("Listenning to collection updates...")
+        
+        self.collectionListener = completionHandler
     }
     
     func generateAuthor(completionHandler: @escaping (PhotoResponse) -> Void) -> Void {
@@ -58,6 +63,7 @@ class CollectionService {
         
         print("New photo is \(self.photos.count)")
         
+        // Update collection
         collectionListener?(self.photos)
     }
 }
