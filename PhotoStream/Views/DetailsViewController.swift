@@ -33,7 +33,7 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func closeDetails(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true)
     }
     
 }

@@ -16,6 +16,8 @@ class CaptureViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     private var cameraPreviewLayer: AVCaptureVideoPreviewLayer!
     private var photoSettings: AVCapturePhotoSettings!
     
+    private var syncingViewController: UIViewController?
+    
     @IBOutlet weak var cameraView: UIView!
     
     override func viewDidLoad() {
@@ -71,25 +73,44 @@ class CaptureViewController : UIViewController, AVCapturePhotoCaptureDelegate {
             // Mock result with an internal photo
             savePicture(image: UIImage(named: "Photo2")!)
         }
+        
+        // Instantiate the LoadingAlertViewController from the storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Adjust the name if needed
+        syncingViewController = storyboard.instantiateViewController(withIdentifier: "SyncingViewControllerID") as? UIViewController
+        if let syncingViewController = syncingViewController {
+            if let presentationController = syncingViewController.presentationController as? UISheetPresentationController {
+                presentationController.detents = [.medium()]
+            }
+            
+            present(syncingViewController, animated: true, completion: nil)
+        }
     }
     
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
-        guard let imageData = photo.fileDataRepresentation() else { return }
-        
-        let image = UIImage(data: imageData)
-        savePicture(image: image!)
-        
         // Stop the capture session
         DispatchQueue.global(qos: .userInitiated).async {
             self.captureSession.stopRunning()
         }
+        
+        guard let imageData = photo.fileDataRepresentation() else {
+            closeController()
+            return
+        }
+        
+        let image = UIImage(data: imageData)
+        savePicture(image: image!)
     }
     
     func savePicture(image: UIImage) {
         CollectionService.shared.generateAuthor() { response in
             CollectionService.shared.savePhoto(image: image, author: response.author)
             
-            self.navigationController?.popViewController(animated: true)
+            self.closeController()
         }
+    }
+    
+    func closeController() {
+        syncingViewController?.dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
