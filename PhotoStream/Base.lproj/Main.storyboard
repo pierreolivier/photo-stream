@@ -231,6 +231,15 @@ Enjoy your experience!</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-0Z-jSi">
+                                <rect key="frame" x="345" y="566" width="32" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="downloadImage:" destination="Bo9-kf-gyU" eventType="primaryActionTriggered" id="Y6q-Tp-3Pb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FXO-zm-P4p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -268,6 +277,7 @@ Enjoy your experience!</string>
         <image name="camera" catalog="system" width="128" height="93"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="scribble.variable" catalog="system" width="128" height="119"/>
+        <image name="square.and.arrow.down" catalog="system" width="112" height="128"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -32,6 +32,13 @@ class DetailsViewController: UIViewController {
         }
     }
     
+    @IBAction func downloadImage(_ sender: Any) {
+        if let photo = photo, let image = photo.image  {
+            let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func closeDetails(_ sender: Any) {
         self.dismiss(animated: true)
     }

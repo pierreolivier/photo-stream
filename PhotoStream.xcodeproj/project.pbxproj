@@ -517,6 +517,8 @@
 				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoStream/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Access Warning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -545,6 +547,8 @@
 				DEVELOPMENT_TEAM = XP274DQ9A3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoStream/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to take pictures.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Access Warning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
