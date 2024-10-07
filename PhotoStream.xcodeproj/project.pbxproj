@@ -21,6 +21,8 @@
 		CEDC80A92CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC80A82CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift */; };
 		CEE6EAD72CAEF84800C161DF /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EAD62CAEF84800C161DF /* CaptureViewController.swift */; };
 		CEE6EAD92CAEFB1C00C161DF /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EAD82CAEFB1C00C161DF /* PhotoCollectionViewCell.swift */; };
+		CEE6EADD2CB3D14500C161DF /* CollectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6EADC2CB3D14500C161DF /* CollectionService.swift */; };
+		CEE6EAE02CB3D6D300C161DF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEE6EADF2CB3D6D300C161DF /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		CEDC80A82CAC24EF001BD818 /* PhotoStreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEE6EAD62CAEF84800C161DF /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		CEE6EAD82CAEFB1C00C161DF /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEE6EADC2CB3D14500C161DF /* CollectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE6EAE02CB3D6D300C161DF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 		CE29992A2CADE7060087FB36 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CEE6EADC2CB3D14500C161DF /* CollectionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,6 +203,9 @@
 			dependencies = (
 			);
 			name = PhotoStream;
+			packageProductDependencies = (
+				CEE6EADF2CB3D6D300C161DF /* Alamofire */,
+			);
 			productName = PhotoStream;
 			productReference = CEDC80822CAC24ED001BD818 /* PhotoStream.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +278,9 @@
 				Base,
 			);
 			mainGroup = CEDC80792CAC24ED001BD818;
+			packageReferences = (
+				CEE6EADE2CB3D6D300C161DF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CEDC80832CAC24ED001BD818 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,6 +330,7 @@
 				CEE6EAD72CAEF84800C161DF /* CaptureViewController.swift in Sources */,
 				CEDC80862CAC24ED001BD818 /* AppDelegate.swift in Sources */,
 				CEDC80882CAC24ED001BD818 /* SceneDelegate.swift in Sources */,
+				CEE6EADD2CB3D14500C161DF /* CollectionService.swift in Sources */,
 				CE29992E2CADE7EB0087FB36 /* PhotoCollectionViewModel.swift in Sources */,
 				CE2999372CADF5C40087FB36 /* DetailsViewController.swift in Sources */,
 			);
@@ -663,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEE6EADE2CB3D6D300C161DF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEE6EADF2CB3D6D300C161DF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE6EADE2CB3D6D300C161DF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEDC807A2CAC24ED001BD818 /* Project object */;
 }
