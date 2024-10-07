@@ -64,6 +64,7 @@
 		CEE6EAD62CAEF84800C161DF /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		CEE6EAD82CAEFB1C00C161DF /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEE6EADC2CB3D14500C161DF /* CollectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionService.swift; sourceTree = "<group>"; };
+		CEF2AD5E2CB42D93008ADC7A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 		CEDC80792CAC24ED001BD818 = {
 			isa = PBXGroup;
 			children = (
+				CEF2AD5E2CB42D93008ADC7A /* README.md */,
 				CEDC80842CAC24ED001BD818 /* PhotoStream */,
 				CEDC809B2CAC24EF001BD818 /* PhotoStreamTests */,
 				CEDC80A52CAC24EF001BD818 /* PhotoStreamUITests */,
